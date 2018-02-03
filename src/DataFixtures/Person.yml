@@ -1,0 +1,5 @@
+App\Entity\Person:
+    person_{1..100}:
+        name: '<firstName()> <lastName()>'
+        birthDate: '<dateTimeThisCentury()>'
+        email: <email()>
