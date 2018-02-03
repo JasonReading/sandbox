@@ -35,11 +35,27 @@ class Person
     private $birthDate;
 
     /**
+     * @var \DateTime
+     * @ORM\Column(type="datetime", nullable=true)
+     */
+    private $createdDate;
+
+    /**
      * @return mixed
      */
     public function getId()
     {
         return $this->id;
+    }
+
+    /**
+     * @param mixed $id
+     * @return Person
+     */
+    public function setId($id)
+    {
+        $this->id = $id;
+        return $this;
     }
 
     /**
@@ -93,6 +109,24 @@ class Person
     public function setBirthDate(\DateTime $birthDate): Person
     {
         $this->birthDate = $birthDate;
+        return $this;
+    }
+
+    /**
+     * @return \DateTime
+     */
+    public function getCreatedDate(): \DateTime
+    {
+        return $this->createdDate;
+    }
+
+    /**
+     * @param \DateTime $createdDate
+     * @return Person
+     */
+    public function setCreatedDate(\DateTime $createdDate): Person
+    {
+        $this->createdDate = $createdDate;
         return $this;
     }
 
