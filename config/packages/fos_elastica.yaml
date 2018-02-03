@@ -8,7 +8,8 @@ fos_elastica:
                 person:
                     properties:
                         id: ~
-                        name: ~
+                        name:
+                            type: completion
                         email: ~
                         birthDate: ~
                         createdDate: ~

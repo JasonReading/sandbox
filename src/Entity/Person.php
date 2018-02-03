@@ -24,7 +24,7 @@ class Person
 
     /**
      * @var string
-     * @ORM\Column(type="string", unique=true, nullable=false)
+     * @ORM\Column(type="string", nullable=false)
      */
     private $email;
 
